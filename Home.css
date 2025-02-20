@@ -1,0 +1,649 @@
+@font-face {
+    font-family: "Font";
+    src: url("orkney-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Heading";
+    src: url("Debata-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Fago";
+    src: url("FagoSans-BF64fc137209a74.otf") format("opentype");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+article{
+    background-color: white;
+}
+
+body{
+    background-color: #4ea59d;
+    color: black;
+    font-family: Font;
+    margin: 0;
+}
+
+
+
+
+
+/*Navigation Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    backdrop-filter: blur(40px);
+    position: sticky;
+    top: 20px;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0 auto;
+    border: black 10px;
+    box-shadow: black 25px 20px 40px;
+    z-index: 9999;
+}
+
+.nav-container a:hover {
+    color: #4ea59d;
+}
+
+#space:hover {
+    color: black;
+}
+
+#space{
+    color: black;
+}
+
+#title {
+    color: #4ea59d;
+    margin-left: 10px;
+    font-size: large;
+    margin-top: 18px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 30px;
+}
+
+.nav {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#nav_intro {
+    margin-left: 20px;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 830px) {
+    .nav_value{
+        display: none;
+    }
+
+    .nav b{
+        font-size: medium;
+    }
+
+    #space{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Intro Part*/
+#intro{
+    display: flex;
+    background-image: linear-gradient(rgb(78, 165, 157, 0.5) 10%, rgb(255, 255, 255, 1) 45%);
+    color: black;
+    width: 100%;
+    height: 930px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    margin-right: 230px;
+}
+
+#intro_photo{
+    height: 650px;
+    width: 500px;
+    margin-right: 40px;
+    margin-left: 200px;
+}
+
+#heading{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: Heading;
+}
+
+#text{
+    font-size: 20px;
+    color: black;
+}
+
+#nexora_button{
+    background-color: white;
+    border: 3px solid #4ea59d;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    transition: 0.5s;
+    color: #4ea59d;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nexora_button:hover{
+    background-color: white;
+    border: 3px solid #4ea59d;
+    width: 208px;
+    margin-right: 3px;
+}
+
+#aboutus{
+    text-decoration: none;
+    color: #4ea59d;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+#aboutus:hover{
+    color: #6ad6cc;
+}
+
+#efa{
+    margin-top: 0;
+    margin-bottom: 180px;
+    margin-left: 130px;
+    font-size: 40px;
+    color: #4ea59d;
+    font-family: fago;
+}
+
+.intro-text hr{
+    width: 70%;
+    color: #4ea59d;
+}
+
+#efa b{
+    color: rgb(175, 175, 175);
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #intro_photo {
+        height: 450px;
+        width: 350px;
+        margin: 0px 0;
+        margin-bottom: 0px;
+    }
+
+    .intro-text {
+        margin: 0px 0;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #heading {
+        font-size: 70px;
+        color: #4ea59d;
+    }
+
+    #efa {
+        margin: 0px 0;
+        font-size: 35px;
+    }
+
+    #text {
+        font-size: 16px;
+    }
+
+    #nexora_button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #nexora_button:hover{
+        width: 150px;
+    }
+
+    #aboutus {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#introduction{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+#logo-introduction{
+    width: 400px;
+    margin: 100px;
+    margin-left: 10%;
+    border-radius: 300px;
+}
+
+#text-introduction{
+    width: 50%;
+    margin-right: 10px;
+}
+
+#text-introduction p{
+    text-align: justify;
+    width: 80%;
+    margin: 30px;
+    font-size: medium;
+}
+
+#text-introduction b{
+    color: #4ea59d;
+    font-size: xx-large;
+}
+
+#text-introduction h1{
+    text-align: center;
+    font-size: 70px;
+    color: #4ea59d;
+}
+
+@media screen and (max-width: 1000px) {
+    #introduction {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    #logo-introduction {
+        width: 300px;
+        margin: 20px 0;
+        border-radius: 150px;
+    }
+
+    #text-introduction {
+        width: 100%;
+        margin: 0;
+    }
+
+    #text-introduction p {
+        text-align: justify;
+        width: 90%;
+        margin: 5%;
+        font-size: medium;
+    }
+
+    #text-introduction b {
+        font-size: large;
+    }
+
+    #text-introduction h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about_nexora{
+    text-align: justify;
+    background-color: #f0f3ef;
+    margin: 70px;
+    padding: 150px;
+    border: none;
+    border-radius: 100px;
+    font-size: medium;
+}
+
+#about_nexora h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #4ea59d;
+}
+
+#about_nexora b{
+    color: #4ea59d;
+}
+
+#about_nexora i{
+    font-size: small;
+    color: darkgray;
+}
+
+@media screen and (max-width: 500px) {
+    #about_nexora{
+        text-align: justify;
+        background-color: #f0f3ef;
+        margin: 10px;
+        padding: 30px;
+        border: none;
+        border-radius: 50px;
+        font-size: medium;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    #Q-Main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Q-Card {
+        width: 70%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .Q-Card img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+#Qualifications{
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(78, 165, 157, 1)), url(school.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Qualifications h1{
+    font-size: 60px;
+    color: #4ea59d;
+    text-align: center;
+}
+
+#Q-Main{
+    display: flex;
+    justify-content: center;
+}
+
+.Q-Card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 40px;
+    border: 5px solid #f0f3ef;
+    transition: 0.4s;
+    margin: 30px;
+}
+
+.Q-Card:hover{
+    border: 5px solid #4ea59d;
+    backdrop-filter: blur(35px);
+}
+
+.Q-Card img{
+    width: 70%;
+    height: 220px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Universtity Part*/
+#University{
+    background-color: #4ea59d;
+    width: 100%;
+    padding-top: 100px;
+}
+
+#U-Title{
+    font-size: 55px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flags{
+    display: grid;
+    justify-items: center;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.flag{
+    width: 330px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: white 1px 1px 60px;
+    opacity: 1;
+}
+
+.flag:hover{
+    opacity: 80%;
+}
+
+#University h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: large;
+}
+
+#U-Line{
+    width: 40%;
+    margin-bottom: 40px;
+    color: #f0f3ef;
+}
+
+@media screen and (max-width: 1000px) {
+    #U-Title{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Part*/
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
